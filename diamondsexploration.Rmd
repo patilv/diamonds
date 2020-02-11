@@ -1,0 +1,39 @@
+---
+title: "Diamonds Exploration"
+author: "Vivek H. Patil"
+date: "2/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Reading the excel file
+
+```{r}
+library(readxl)
+mydiamonds<-read_excel("diamonds.xlsx")
+```
+
+# Names of variables
+
+```{r}
+names(mydiamonds)
+```
+
+# Top 6 observations
+
+```{r}
+head(mydiamonds)
+```
+
+# Creating a new variable
+
+```{r}
+mydiamonds$pricetable<-mydiamonds$price+mydiamonds$table
+
+head(mydiamonds$pricetable)
+summary(mydiamonds$pricetable)
+```
+
