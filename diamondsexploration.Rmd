@@ -35,5 +35,6 @@ mydiamonds$pricetable<-mydiamonds$price+mydiamonds$table
 
 head(mydiamonds$pricetable)
 summary(mydiamonds$pricetable)
+str(mydiamonds$pricetable)
 ```
 
